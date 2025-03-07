@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+streamlit = "*"
+leafmap = "*"
+geopy = "*"
+fpdf = "*"
+spacy = "*"
+python-dotenv = "*"
+crewai = "==0.100.1"
+folium = "*"
+streamlit-folium = "==0.13.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+app = "streamlit run app.py"

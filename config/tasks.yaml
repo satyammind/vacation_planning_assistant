@@ -1,0 +1,27 @@
+task_one:
+  description: >
+    Plan the best journey from {starting_point} to {destination}, providing detailed transport options (including mode, duration, cost, departure, and arrival details).
+  expected_output: >
+    A list of transport options with comprehensive details such as travel mode (flight, train, etc.), duration, cost, and any necessary transfers.
+  agent: starting_agent
+  
+task_two:
+  description: >
+    Fetch detailed information about {destination} including current weather, cultural highlights, history, famous landmarks, and any local events during the travel period.
+  expected_output: >
+    A comprehensive destination guide covering weather forecasts, cultural insights, historical background, and notable landmarks and events.
+  agent: destination_agent
+  
+task_three:
+  description: >
+    Suggest attractions and local experiences based on user preferences ({preferences}), including street food hotspots and hidden gems.
+  expected_output: >
+    A list of top-rated attractions and experiences, each with location details, ratings, descriptions, and insider tips (e.g., best times to visit or must-try foods).
+  agent: attraction_agent
+  
+task_four:
+  description: >
+    Create a complete itinerary that includes transport options, a day-by-day journey plan from {starting_point} to {destination}, approximate costing, current weather details, comprehensive destination information, attractions, street food recommendations, packing essentials, and additional travel tips.
+  expected_output: >
+    A detailed travel itinerary in text format that provides a day-wise schedule, cost breakdown, packing list, and practical travel advice.
+  agent: itinerary_agent
